@@ -60,10 +60,10 @@
 		"typecheck": "tsc --noEmit",
 		"verify:dist": "bun run scripts/verifyDist.ts",
 		"check:package": "absolute-changelog check",
-		"prepublishOnly": "absolute-changelog check"
+		"prepublishOnly": "bun run check:package"
 	},
 	"devDependencies": {
-		"@absolutejs/changelog": "^0.5.1",
+		"@absolutejs/changelog": "^0.6.0",
 		"@types/bun": "1.3.14",
 		"prettier": "3.5.3",
 		"typescript": "5.9.3"
