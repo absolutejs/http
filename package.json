@@ -59,10 +59,11 @@
 		"test": "bun test",
 		"typecheck": "tsc --noEmit",
 		"verify:dist": "bun run scripts/verifyDist.ts",
-		"check:package": "absolute-changelog check"
+		"check:package": "absolute-changelog check",
+		"prepublishOnly": "absolute-changelog check"
 	},
 	"devDependencies": {
-		"@absolutejs/changelog": "^0.1.2",
+		"@absolutejs/changelog": "^0.2.0",
 		"@types/bun": "1.3.14",
 		"prettier": "3.5.3",
 		"typescript": "5.9.3"
